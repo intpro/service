@@ -31,7 +31,7 @@ class CleanTest extends TestCase
         return $app;
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -41,7 +41,7 @@ class CleanTest extends TestCase
         $this->extractAgent = $this->app->make('Interpro\Entrance\Contracts\Extract\ExtractAgent');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
        parent::tearDown();
     }
